@@ -48,8 +48,8 @@ def augmentAruco(bbox, id, img, imgAug, drawID=True):
     cv2.fillConvexPoly(img, pts1.astype(int), 255)
     imgOut += img
 
-    cv2.imshow("wutever", imgOut)
-    results = cv2.bitwise_and(imgOut, imgOut, img, mask=mask)
+    # cv2.imshow("wutever", imgOut)
+    # results = cv2.bitwise_and(imgOut, imgOut, img, mask=mask)
 
     # if drawID:
     #     cv2.putText(imgOut, str(id), top_left, cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 255), 2)
